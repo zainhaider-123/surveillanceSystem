@@ -27,7 +27,7 @@ const Signup = () => {
       return handleError('All fields are required')
     }
     try {
-      const url = 'http://localhost:8080/auth/signup';
+      const url = 'https://surveillance-system-api.vercel.app/auth/signup';
       const response = await fetch(url, {
         method: 'POST',
         headers: {
